@@ -592,54 +592,43 @@
                     data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </button>
+    <!-- ================= IDEATHON ================= -->
 
-          <p>Hackathon Achievements</p>
+    <h3 class="achievement-heading">💡 Ideathon</h3>
+
+    <div id="ideathonCarousel"
+         class="carousel slide"
+         data-bs-ride="carousel"
+         data-bs-interval="4000">
+
+      <div class="carousel-inner">
+
+        <!-- Image 1 -->
+        <div class="carousel-item active">
+          <img src="assets/img/c2.jpeg" class="d-block w-100">
+          <div class="carousel-caption">
+            <h3>Ideathon Participation</h3>
+          </div>
         </div>
 
-        <div id="hackathonCarousel"
-             class="carousel slide"
-             data-bs-ride="carousel"
-             data-bs-interval="4000">
+        <!-- Image 2 -->
+        <div class="carousel-item">
+          <img src="assets/img/12.jpeg" class="d-block w-100">
+          <div class="carousel-caption">
+            <h3>Project Presentation</h3>
+          </div>
+        </div>
 
-            <div class="carousel-inner">
+        <!-- Image 3 -->
+        <div class="carousel-item">
+          <img src="assets/img/i3.jpeg" class="d-block w-100">
+          <div class="carousel-caption">
+            <h3>Team Collaboration</h3>
+          </div>
+        </div>
 
-                <div class="carousel-item active">
-                    <img src="assets/img/1762248597052.jpg" class="d-block w-100" alt="">
-                    <div class="carousel-caption">
-                        <h3>🏆 Runner-up - HEBER HACKATHON 2K25</h3>
-                        <p>AI-Based Smart Blind Stick with Obstacle & Pit Detection</p>
-                    </div>
-                </div>
+      </div>
 
-                <div class="carousel-item">
-                    <img src="assets/img/c4.jpeg" class="d-block w-100" alt="">
-                    <div class="carousel-caption">
-                        <h3>Project Demonstration</h3>
-                        <p>Arduino • Ultrasonic • IR Sensor • AI Logic</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/c1.jpeg" class="d-block w-100" alt="">
-                    <div class="carousel-caption">
-                        <h3>Team Achievement</h3>
-                        <p>Thanks to our mentors and teammates ❤️</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <button class="carousel-control-prev" type="button"
-                    data-bs-target="#hackathonCarousel"
-                    data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-
-            <button class="carousel-control-next" type="button"
-                    data-bs-target="#hackathonCarousel"
-                    data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
 
         </div>
 
@@ -745,30 +734,31 @@
   margin-right: 8px;
 }
 
-  #hackathonCarousel{
+ .achievement-heading{
+    color:#18d26e;
+    font-size:28px;
+    font-weight:700;
+    margin:40px 0 20px;
+    text-align:center;
+}
+
+#hackathonCarousel,
+#ideathonCarousel{
     max-width:900px;
     margin:auto;
 }
 
-#hackathonCarousel img{
+#hackathonCarousel img,
+#ideathonCarousel img{
+    width:100%;
     height:500px;
     object-fit:cover;
     border-radius:15px;
 }
 
 .carousel-caption{
-    background:rgba(0,0,0,.55);
+    background:rgba(0,0,0,.5);
     border-radius:10px;
-    padding:15px;
-}
-
-.carousel-caption h3{
-    color:#18d26e;
-    font-weight:700;
-}
-
-.carousel-caption p{
-    color:#fff;
 }
 </style>
 
