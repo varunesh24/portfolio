@@ -252,3 +252,29 @@
   new PureCounter();
 
 })()
+
+
+const section = document.querySelector("#achievements");
+let fired = false;
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting && !fired){
+
+            fired = true;
+
+            confetti({
+                particleCount:120,
+                spread:100,
+                origin:{y:0.6}
+            });
+
+        }
+
+    });
+
+},{threshold:0.5});
+
+observer.observe(section);
